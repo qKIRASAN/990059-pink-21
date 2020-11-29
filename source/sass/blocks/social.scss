@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 38px;
+  list-style: none;
+}
+
+.social__button {
+  display: block;
+  width: 54px;
+  height: 54px;
+  margin: 0 4px;
+  border: 3px solid rgba($primary, 0.1);
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--twitter {
+    background-image: url("../img/twitter.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/facebook.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/youtube.svg");
+  }
+}

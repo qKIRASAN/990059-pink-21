@@ -1,0 +1,41 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__list {
+  display: flex;
+  text-align: center;
+
+  &--current {
+    position: relative;
+    left: -100%;
+  }
+}
+
+.slider__item {
+  flex: 0 0 100%;
+}
+
+.slider__toggle {
+  margin: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: rgba($primary, 0.3);
+  border-radius: 50%;
+}
+
+.slider__toggle--current {
+  background-color: $basic-white;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid $primary;
+    border-radius: 50%;
+  }
+}

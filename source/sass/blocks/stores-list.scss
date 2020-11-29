@@ -1,0 +1,32 @@
+.stores-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 33px 38px 10px;
+  list-style: none;
+}
+
+.stores-list__link {
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.stores-list__link--apple {
+  width: 47px;
+  height: 56px;
+  background-image: url("../img/apple-logo.svg");
+}
+
+.stores-list__link--android {
+  width: 43px;
+  height: 47px;
+  background-image: url("../img/android-logo.svg");
+}
+
+.stores-list__link--microsoft {
+  width: 44px;
+  height: 41px;
+  background-image: url("../img/microsoft-logo.svg");
+}

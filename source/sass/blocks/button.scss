@@ -1,0 +1,14 @@
+.button {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: $basic-white;
+  text-align: center;
+}
+
+.button--round {
+  padding: 14px;
+  border: 3px solid $basic-white;
+  border-radius: 29px;
+}
