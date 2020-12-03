@@ -7,9 +7,7 @@
 }
 
 .feedback__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 }
 
 .feedback__user-blockquote {
@@ -25,8 +23,10 @@
   line-height: 30px;
 }
 
-.feedback__author-details--disabled {
-  display: none;
+.feedback__author-details {
+  &--disabled {
+    display: none;
+  }
 }
 
 .feedback__toggles {

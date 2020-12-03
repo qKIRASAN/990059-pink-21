@@ -36,34 +36,33 @@
     height: 4px;
     background-color: $basic-white;
   }
-}
 
-.main-nav__toggle--close {
-  top: 11%;
-  width: 32px;
-  background-color: transparent;
-
-  &::before {
-    top: 0;
+  &--close {
+    top: 11%;
     width: 32px;
-    transform: rotate(45deg);
+    background-color: transparent;
+
+    &::before {
+      top: 0;
+      width: 32px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 0;
+      width: 32px;
+      transform: rotate(-45deg);
+    }
   }
 
-  &::after {
-    top: 0;
-    width: 32px;
-    transform: rotate(-45deg);
+  &--disabled {
+    display: none;
   }
 }
 
-.main-nav__toggle--disabled {
-  display: none;
-}
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
 
   &--disabled {
     display: none;

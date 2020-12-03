@@ -11,22 +11,22 @@
 .stores-list__link {
   display: block;
   background-repeat: no-repeat;
-}
 
-.stores-list__link--apple {
-  width: 47px;
-  height: 56px;
-  background-image: url("../img/apple-logo.svg");
-}
+  &--apple {
+    width: 47px;
+    height: 56px;
+    background-image: url("../img/apple-logo.svg");
+  }
 
-.stores-list__link--android {
-  width: 43px;
-  height: 47px;
-  background-image: url("../img/android-logo.svg");
-}
+  &--android {
+    width: 43px;
+    height: 47px;
+    background-image: url("../img/android-logo.svg");
+  }
 
-.stores-list__link--microsoft {
-  width: 44px;
-  height: 41px;
-  background-image: url("../img/microsoft-logo.svg");
+  &--microsoft {
+    width: 44px;
+    height: 41px;
+    background-image: url("../img/microsoft-logo.svg");
+  }
 }

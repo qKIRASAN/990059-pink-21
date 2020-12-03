@@ -18,6 +18,10 @@
   border-right-color: $basic-white;
   border-left-color: $basic-white;
   border-radius: 1px 0 0 0;
+
+  &--disabled {
+    display: none;
+  }
 }
 
 .tariff__header {
@@ -37,36 +41,37 @@
   text-transform: uppercase;
   border: 1px solid $complementary-soft;
   border-radius: 1px 0 0 0;
-}
 
-.tariff__header-container--disabled,
-.tariff__option-container--disabled {
-  display: none;
+  &--disabled {
+    display: none;
+  }
 }
 
 .tariff__option {
   position: relative;
-}
 
-.tariff__option--selected,
-.tariff__option--deselected {
-  display: flex;
+  &--selected,
+  &--deselected {
+    display: flex;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -3px;
-    transform: translateY(-50%);
-    width: 31px;
-    height: 21px;
-    background-image: url("../img/yes.svg");
-    background-repeat: no-repeat;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: -3px;
+      transform: translateY(-50%);
+      width: 31px;
+      height: 21px;
+      background-image: url("../img/check.svg");
+      background-repeat: no-repeat;
+    }
   }
-}
 
-.tariff__option--deselected::after {
-  width: 27px;
-  height: 27px;
-  background-image: url("../img/no.svg");
+  &--deselected {
+    &::after {
+      width: 27px;
+      height: 27px;
+      background-image: url("../img/cross.svg");
+    }
+  }
 }

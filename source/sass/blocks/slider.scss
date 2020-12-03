@@ -23,19 +23,19 @@
   height: 6px;
   background-color: rgba($primary, 0.3);
   border-radius: 50%;
-}
 
-.slider__toggle--current {
-  background-color: $basic-white;
-  position: relative;
+  &--current {
+    background-color: $basic-white;
+    position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: -2px;
-    width: 10px;
-    height: 10px;
-    border: 3px solid $primary;
-    border-radius: 50%;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -2px;
+      width: 10px;
+      height: 10px;
+      border: 3px solid $primary;
+      border-radius: 50%;
+    }
   }
 }
