@@ -2,6 +2,7 @@
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
+@import "global/reset-list.scss";
 
 //Blocks
 @import "blocks/page.scss";
@@ -23,3 +24,6 @@
 @import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/develop.scss";
+@import "blocks/contest.scss";
+@import "blocks/contest-form.scss";
+@import "blocks/modal.scss";
