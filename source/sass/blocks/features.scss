@@ -1,0 +1,50 @@
+.features {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.features__lead {
+  padding: 14px;
+}
+
+.features__list {
+  position: relative;
+  margin: -24px 0 -42px;
+  padding: 114px 20px 20px;
+  background-image: url("../img/iphone.png"),
+    url("../img/background-grey.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%, 0 0;
+  list-style: none;
+}
+
+.features__item {
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.features__specific {
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.features__content {
+  margin: 0;
+  padding: 2px 0;
+  text-align: center;
+}
+
+.features__image-container {
+  margin-top: 74px;
+  padding-top: 2px;
+  width: 136px;
+  height: 245px;
+
+  &--disabled {
+    display: none;
+  }
+}

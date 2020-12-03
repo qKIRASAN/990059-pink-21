@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.logo__icon-glasses {
+  fill: $basic-white;
+
+  &--contrast {
+    margin-right: 12px;
+    fill: $secondary-soft;
+  }
+}
+
+.logo__icon-pink {
+  fill: $basic-white;
+
+  &--contrast {
+    fill: $primary;
+  }
+}

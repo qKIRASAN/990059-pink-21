@@ -1,0 +1,19 @@
+.header {
+  position: relative;
+  margin-bottom: -66px;
+  color: $basic-white;
+  background-color: $primary;
+  z-index: 3;
+
+  &--js-on {
+    background-color: rgba($basic-black, 0.3);
+  }
+}
+
+.header__logo {
+  padding: 23px 90px 23px 20px;
+
+  &--js-on {
+    padding: 22px 90px 21px 20px;
+  }
+}
