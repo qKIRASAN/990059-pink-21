@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: inherit;
+  color: $basic-white;
+  text-align: center;
+
+  &--round {
+    padding: 14px;
+    border: 3px solid $basic-white;
+    border-radius: 29px;
+  }
+
+  &--rect {
+    padding: 14px;
+    width: 100%;
+    line-height: 30px;
+    background-color: $accent-soft;
+    text-transform: uppercase;
+    border: 2px solid $accent-soft;
+    border-radius: 1px;
+  }
+}
