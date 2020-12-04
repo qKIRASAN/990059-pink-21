@@ -1,0 +1,53 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: $basic-white;
+  box-shadow: 0 7px 15px rgba($basic-black, 0.15);
+  border-radius: 1px;
+  z-index: 5;
+
+  &--failure {
+    display: none;
+  }
+
+  &--success {
+    display: none;
+  }
+}
+
+.modal__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 20px;
+  text-align: center;
+
+  &--failure {
+    padding-bottom: 49px;
+  }
+}
+
+.modal__lead {
+  padding: 15px;
+  font-size: 18px;
+  color: $basic-black;
+}
+
+.modal__message {
+  font-weight: 400;
+  margin: 0;
+  padding: 10px 0;
+
+  &--failure {
+    padding-bottom: 42px;
+  }
+}
+
+.modal__button-container {
+  padding: 50px 20px;
+  background-color: $complementary-light;
+  border-radius: 0 0 1px 1px;
+}

@@ -1,0 +1,7 @@
+@mixin full-width-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  overflow: hidden;
+}
