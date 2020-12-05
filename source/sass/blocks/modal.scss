@@ -7,7 +7,7 @@
   background: $basic-white;
   box-shadow: 0 7px 15px rgba($basic-black, 0.15);
   border-radius: 1px;
-  z-index: 5;
+  z-index: $z-index-popup;
 
   &--failure {
     display: none;

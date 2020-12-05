@@ -3,7 +3,7 @@
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "mixin/reset-list.scss";
-@import "mixin/full-width-container.scss";
+@import "mixin/viewport-width-100";
 
 //Blocks
 @import "blocks/page.scss";
@@ -13,6 +13,7 @@
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/promo.scss";
+@import "blocks/lead-container.scss";
 @import "blocks/lead.scss";
 @import "blocks/button.scss";
 @import "blocks/stores-list.scss";
@@ -29,3 +30,6 @@
 @import "blocks/contest.scss";
 @import "blocks/contest-form.scss";
 @import "blocks/modal.scss";
+@import "blocks/catalog.scss";
+@import "blocks/user-posts.scss";
+@import "blocks/user-post.scss";
