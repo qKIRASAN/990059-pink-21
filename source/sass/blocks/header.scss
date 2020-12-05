@@ -3,7 +3,7 @@
   margin-bottom: -66px;
   color: $basic-white;
   background-color: $primary;
-  z-index: 3;
+  z-index: $z-index-header;
 
   &--js-on {
     background-color: rgba($basic-black, 0.3);
