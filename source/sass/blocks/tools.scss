@@ -1,0 +1,27 @@
+.tools {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.tools__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 44px;
+  padding: 0;
+  font: inherit;
+  border: 0;
+}
+
+.tools__icon {
+  fill: $primary;
+  opacity: 0.3;
+
+  &--active {
+    fill: $secondary-soft;
+    opacity: 1;
+  }
+}

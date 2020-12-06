@@ -1,0 +1,19 @@
+.upload__inner {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  background-color: $complementary-light;
+
+  &--viewport-width {
+    @include viewport-width-100;
+  }
+}
+
+.upload__picture {
+  margin-bottom: 37px;
+}
+
+.upload__button-container {
+  padding: 10px 0;
+  margin-bottom: 12px;
+}
