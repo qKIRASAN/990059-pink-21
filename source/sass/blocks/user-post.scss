@@ -1,12 +1,20 @@
 .user-post {
   margin-bottom: 21px;
-  background-color: $complementary-light;
 }
 
 .user-post__image-container {
+  width: 280px;
+  height: 180px;
+  background-color: $complementary-soft;
+
   &--viewport-width {
     @include viewport-width-100;
+    height: 137px;
   }
+}
+
+.user-post__container {
+  background-color: $complementary-light;
 }
 
 .user-post__header {
