@@ -1,0 +1,23 @@
+.catalog {
+  margin-bottom: 20px;
+}
+
+.catalog__lead {
+  padding: 94px 20px 44px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.catalog__section-description {
+  margin: 0;
+  padding: 44px 0 50px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+
+  &--upload {
+    padding-top: 23px;
+    padding-bottom: 42px;
+  }
+}
