@@ -1,7 +1,9 @@
 @mixin viewport-width-100 {
   position: relative;
+  right: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  margin-right: -50vw;
+  margin-left: -50vw;
   width: 100vw;
   overflow: hidden;
 }

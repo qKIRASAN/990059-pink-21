@@ -13,7 +13,15 @@ $complementary-soft: #e5e5e5;
 $special-border: #252527;
 $special-background: #1d2631;
 
+//Viewport
+$small-only: 659.98px;
+$tablet: 660px;
+$mobile-and-tablet-only: 959.98px;
+$desktop: 960px;
+
 //Z-index
 $z-index-header: 3;
 $z-index-highlight: 5;
 $z-index-popup: 7;
+$z-index-background-color: -2;
+$z-index-background-image: -1;
