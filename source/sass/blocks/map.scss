@@ -2,17 +2,54 @@
   position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 25px;
+  width: 100%;
+  min-height: 200px;
+  background-color: $complementary-light;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   overflow: hidden;
 
-  &::after {
+  @media (min-width: $tablet) {
+    min-height: 374px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 578px;
+    background-image: url("../img/map-large.jpg");
+    z-index: $z-index-background-image;
+  }
+
+  &--viewport-width {
+    @include viewport-width-100;
+  }
+
+  &::before {
     content: "";
     position: absolute;
-    top: -98px;
-    width: 100%;
-    height: 132px;
-    background-image: url("../img/triangle.svg");
-    background-repeat: no-repeat;
-    background-position: bottom;
+    top: 0;
+    left: 0;
+    border-top: 10vw solid $basic-white;
+    border-right: 50vw solid transparent;
+    border-left: 50vw solid transparent;
+    overflow: hidden;
+
+    @media (min-width: $desktop) {
+      border-top-width: 9vw;
+    }
+  }
+}
+
+.map iframe {
+  border: 0;
+
+  @media (min-width: $tablet) {
+    width: 660px;
+    height: 374px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1200px;
+    height: 540px;
   }
 }

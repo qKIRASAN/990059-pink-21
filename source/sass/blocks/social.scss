@@ -1,9 +1,9 @@
 .social {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  padding: 0 38px;
-  list-style: none;
+  align-items: center;
+
+  @include reset-list;
 }
 
 .social__button {

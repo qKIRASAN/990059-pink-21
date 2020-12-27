@@ -1,13 +1,31 @@
 .tariffs {
-  position: relative;
-  margin-bottom: 20px;
-  padding: 129px 0 75px;
-  background-image: url("../img/background-grey.png");
-  background-repeat: no-repeat;
+  background-color: $complementary-light;
+  overflow: hidden;
+  z-index: $z-index-background-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-right: 100vw solid transparent;
+    border-top: 6vw solid #ffffff;
+    overflow: hidden;
+    z-index: $z-index-background-color;
+
+    @media (min-width: $desktop) {
+      border-top-width: 8vw;
+    }
+  }
 }
 
 .tariffs__toggles {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 32px 20px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }

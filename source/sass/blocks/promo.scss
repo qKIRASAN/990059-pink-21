@@ -1,37 +1,115 @@
 .promo {
-  margin-bottom: 26px;
   color: $basic-white;
   background-color: $special-background;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    height: 729px;
+    background-image: url("../img/phone-medium.png"), url("../img/library-medium.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 100%, 50%;
+    background-size: auto, cover;
+  }
+
+  @media (min-width: $desktop) {
+    height: 853px;
+    background-image: url("../img/phone-large.png"), url("../img/library-large.jpg");
+    background-position: 63.5% 100%, 50%;
+    background-size: auto, cover;
+  }
+}
+
+.promo__inner {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 26px;
+
+  @media (max-width: $mobile-and-tablet-only) {
+    position: relative;
+  }
 }
 
 .promo__container-top {
   position: relative;
-  padding: 0 20px;
+  padding: 0;
   width: 100%;
   height: 462px;
-  background-image: url("../img/phone.png"),
-    url("../img/library-mobile.jpg");
+  background-image: url("../img/phone-small.png"),
+    url("../img/library-small.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom, center;
-}
+  background-position: 50% 100%, 50%;
 
-.promo__image-container {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translateX(-50%);
+  &--viewport-width {
+    @include viewport-width-100;
+  }
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .promo__lead {
-  padding: 90px 5px 34px;
+  padding: 90px 20px 34px;
+  max-width: 375px;
+
+  @media (min-width: $tablet) {
+    padding: 204px 30px 8px;
+    max-width: 300px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 209px 30px 15px;
+    margin-left: -30px;
+  }
+
+  @media (max-width: $small-only) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .promo__container-bottom {
-  padding: 28px 20px 21px;
+  padding: 28px 0 21px;
+  max-width: 375px;
+
+  @media (max-width: $small-only) {
+    margin: auto;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 22px 0 21px;
+    max-width: 300px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: -30px;
+  }
+}
+
+.promo__stores-list {
+  padding: 33px 38px 10px;
+
+  @media (min-width: $tablet) {
+    padding: 46px 48px 22px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 69px 48px 25px;
+  }
 }
 
 .promo__content {
   margin: 0;
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 25px 0;
+  }
 }
