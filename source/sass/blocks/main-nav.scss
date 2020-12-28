@@ -2,6 +2,11 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 21px;
+
+  @media (min-width: $desktop) {
+    font-weight: 400;
+    line-height: 18px;
+  }
 }
 
 .main-nav__toggle {
@@ -17,7 +22,8 @@
   font: inherit;
   background-color: $basic-white;
 
-  &::before {
+  &::before,
+  &::after {
     content: "";
     position: absolute;
     top: -10px;
@@ -28,13 +34,7 @@
   }
 
   &::after {
-    content: "";
-    position: absolute;
     top: 10px;
-    left: 0;
-    width: 50px;
-    height: 4px;
-    background-color: $basic-white;
   }
 
   &--close {
@@ -42,17 +42,20 @@
     width: 32px;
     background-color: transparent;
 
-    &::before {
+    &::before,
+    &::after {
       top: 0;
       width: 32px;
       transform: rotate(45deg);
     }
 
     &::after {
-      top: 0;
-      width: 32px;
       transform: rotate(-45deg);
     }
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
   }
 
   &--disabled {
@@ -60,12 +63,29 @@
   }
 }
 
-
 .main-nav__list {
-  @include reset-list;
+  @media (max-width: $mobile-and-tablet-only) {
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin: 0 -50vw;
+    padding: 0;
+    width: 100vw;
+    list-style: none;
+    overflow: hidden;
 
-  &--disabled {
-    display: none;
+    &--closed {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include reset-list;
+
+    margin-right: -70px;
   }
 }
 
@@ -73,6 +93,12 @@
   background-color: $primary;
   box-shadow: 0 1px 0 $basic-black,
     inset 0 1px 0 rgba($basic-white, 0.15);
+
+  @media (min-width: $desktop) {
+    margin: 0 19px;
+    background-color: transparent;
+    box-shadow: none;
+  }
 }
 
 .main-nav__link {
@@ -81,4 +107,8 @@
   color: $basic-white;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $desktop) {
+    text-transform: initial;
+  }
 }

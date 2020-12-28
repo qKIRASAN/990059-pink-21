@@ -6,27 +6,28 @@
 @import "mixin/viewport-width-100";
 
 //Blocks
-@import "blocks/page.scss";
-@import "blocks/container.scss";
 @import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/lead-container.scss";
+@import "blocks/lead.scss";
+@import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/logo.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/promo.scss";
-@import "blocks/lead-container.scss";
-@import "blocks/lead.scss";
-@import "blocks/button.scss";
+@import "blocks/main.scss";
 @import "blocks/stores-list.scss";
+@import "blocks/promo.scss";
 @import "blocks/features.scss";
+@import "blocks/app-test-article.scss";
 @import "blocks/feedback.scss";
 @import "blocks/slider.scss";
 @import "blocks/tariffs";
 @import "blocks/tariff";
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";
-@import "blocks/footer.scss";
 @import "blocks/social.scss";
 @import "blocks/develop.scss";
+@import "blocks/footer.scss";
 @import "blocks/contest.scss";
 @import "blocks/contest-form.scss";
 @import "blocks/modal.scss";

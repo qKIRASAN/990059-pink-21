@@ -15,3 +15,26 @@
   color: $primary;
   background-color: $basic-white;
 }
+
+.page__header {
+  margin-bottom: -66px;
+  z-index: $z-index-header;
+
+  @media (min-width: $tablet) {
+    margin-bottom: -111px;
+  }
+
+  @media (min-width: $desktop) {
+    overflow: hidden;
+  }
+}
+
+.page__container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $desktop) {
+    padding: 0 30px;
+    max-width: 940px;
+  }
+}

@@ -1,9 +1,37 @@
 .feedback {
+  position: relative;
   width: 100%;
+
+  @media (min-width: $desktop) {
+    padding: 50px 0 0;
+  }
+
+  &::before {
+    @media (min-width: $desktop) {
+      content: "";
+      position: absolute;
+      top: 17%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 79px;
+      height: 63px;
+      background-color: transparent;
+      background-image: url("../img/quotes.svg");
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 .feedback__inner {
-  margin: 0 20px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: -20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 58px 45px 40px;
+  }
 }
 
 .feedback__list {
@@ -15,17 +43,53 @@
   flex-direction: column-reverse;
   text-align: center;
   margin: 0;
+  font-weight: 400;
+  line-height: 30px;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 50px;
+  }
+}
+
+.feedback__comment {
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 8px;
+  }
 }
 
 .feedback__author {
+  margin-bottom: 0;
   font-weight: 700;
   font-size: 18px;
-  line-height: 30px;
+
+  @media (min-width: $tablet) {
+    margin-top: 18px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 24px;
+  }
 }
 
 .feedback__author-details {
-  &--disabled {
-    display: none;
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
   }
 }
 
@@ -33,5 +97,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 30px;
+  padding: 9px;
+
+  @media (min-width: $tablet) {
+    padding: 28px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }

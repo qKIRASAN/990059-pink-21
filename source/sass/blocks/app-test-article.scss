@@ -1,0 +1,88 @@
+.app-test-article {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $complementary-light;
+  }
+}
+
+.app-test-article__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    width: 238px;
+    height: 276px;
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet) {
+    margin-bottom: 51px;
+    padding: 49px 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 0;
+    padding: 107px 0 97px;
+
+    &::before {
+      left: 10px;
+      width: 298px;
+      height: 345px;
+    }
+  }
+}
+
+.app-test-article__content {
+  grid-column: 2 / -1;
+
+  @media (min-width: $desktop) {
+    padding-left: 57px;
+  }
+}
+
+.app-test-article__accent {
+  margin: 0;
+  padding: 25px 125px 5px 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: $basic-black;
+
+  @media (min-width: $desktop) {
+    line-height: 30px;
+    padding: 25px 25px 10px 0;
+  }
+}
+
+.app-test-article__brief,
+.app-test-article__link {
+  margin: 0;
+  padding: 5px 25px 5px 0;
+
+  @media (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 15px 25px 15px 0;
+  }
+}
+
+.app-test-article__link {
+  display: block;
+  color: $secondary-soft;
+  text-decoration: underline;
+}

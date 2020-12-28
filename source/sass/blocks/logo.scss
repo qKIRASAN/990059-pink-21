@@ -1,21 +1,54 @@
 .logo {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
+  display: block;
 }
 
-.logo__icon-glasses {
-  fill: $basic-white;
+.logo__initial {
+  display: block;
 
-  &--contrast {
-    margin-right: 12px;
-    fill: $secondary-soft;
+  @media (min-width: $tablet) {
+    display: none;
   }
 }
 
-.logo__icon-pink {
+.logo__medium-screen {
+  display: none;
+
+  @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
+    display: block;
+  }
+}
+
+.logo__large-screen {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.logo__footer-initial {
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.logo__footer-large-screen {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.logo__icon {
   fill: $basic-white;
 
+  &--glasses,
+  &--asterisk {
+    fill: $secondary-soft;
+  }
+
+  &--pink,
   &--contrast {
     fill: $primary;
   }

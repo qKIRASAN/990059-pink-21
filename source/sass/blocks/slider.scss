@@ -38,4 +38,36 @@
       border-radius: 50%;
     }
   }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.slider__button {
+  @media (max-width: $mobile-and-tablet-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 51%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 41px;
+    font: inherit;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/left-arrow.svg");
+    background-repeat: no-repeat;
+
+    &--previous {
+      left: 0;
+    }
+
+    &--next {
+      right: 0;
+      background-image: url("../img/right-arrow.svg");
+    }
+  }
 }
