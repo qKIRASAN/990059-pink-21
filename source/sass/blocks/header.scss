@@ -1,6 +1,14 @@
 .header {
   color: $basic-white;
   background-color: rgba($basic-black, 0.3);
+
+  &--open-menu {
+    background-color: $primary;
+
+    @media (min-width: $desktop) {
+      background-color: rgba($basic-black, 0.3);
+    }
+  }
 }
 
 .header__inner {
@@ -15,10 +23,17 @@
 }
 
 .header__logo {
-  padding: 22px 70px 21px 0;
+  padding: 22px 10px 21px;
+  margin-left: -10px;
+  width: 94px;
+
+  &--open-menu {
+    padding: 23px 10px;
+  }
 
   @media (min-width: $tablet) {
-    padding: 27px 70px 43px 0;
+    padding: 27px 10px 43px;
+    width: 167px;
   }
 
   @media (min-width: $desktop) {

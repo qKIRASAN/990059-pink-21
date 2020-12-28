@@ -63,31 +63,7 @@
   }
 }
 
-.main-nav__list-default {
-  @media (max-width: $mobile-and-tablet-only) {
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin: 0 -50vw;
-    padding: 0;
-    width: 100vw;
-    list-style: none;
-    overflow: hidden;
-  }
-
-  @media (min-width: $desktop) {
-    display: flex;
-    flex-wrap: wrap;
-
-    @include reset-list;
-
-    margin-right: -70px;
-  }
-}
-
 .main-nav__list {
-  display: none;
-
   @media (max-width: $mobile-and-tablet-only) {
     position: relative;
     left: 50%;
@@ -97,6 +73,10 @@
     width: 100vw;
     list-style: none;
     overflow: hidden;
+
+    &--closed {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop) {

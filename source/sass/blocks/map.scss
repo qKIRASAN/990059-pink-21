@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
+  z-index: $z-index-background-image;
 
   @media (min-width: $tablet) {
     min-height: 374px;
@@ -17,7 +18,6 @@
   @media (min-width: $desktop) {
     min-height: 578px;
     background-image: url("../img/map-large.jpg");
-    z-index: $z-index-background-image;
   }
 
   &--viewport-width {
@@ -38,18 +38,39 @@
       border-top-width: 9vw;
     }
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 36px;
+    height: 36px;
+    background-color: $secondary-soft;
+    border: 10px solid $basic-white;
+    border-radius: 50%;
+    z-index: $z-index-background-image;
+
+    @media (min-width: $tablet) {
+      top: 50%;
+    }
+
+    @media (min-width: $desktop) {
+      top: 52%;
+    }
+  }
 }
 
-.map iframe {
+.map__source {
+  width: 100%;
   border: 0;
 
   @media (min-width: $tablet) {
-    width: 660px;
     height: 374px;
   }
 
   @media (min-width: $desktop) {
-    width: 1200px;
     height: 540px;
   }
 }

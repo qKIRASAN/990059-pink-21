@@ -56,21 +56,21 @@
     flex-grow: initial;
     padding: 2px;
 
-    &--left {
+    &--call {
       margin-right: 11px;
     }
 
-    &--right {
+    &--write {
       margin-right: -11px;
     }
   }
 
   @media (min-width: $desktop) {
-    &--left {
+    &--call {
       margin-right: 53px;
     }
 
-    &--right {
+    &--write {
       margin-right: -53px;
     }
   }
@@ -84,11 +84,11 @@
   text-align: center;
 
   @media (min-width: $tablet) {
-    &--left {
+    &--call {
       margin-right: 11px;
     }
 
-    &--right {
+    &--write {
       margin-right: -11px;
     }
   }
@@ -97,11 +97,11 @@
     flex-grow: initial;
     padding: 18px 5px;
 
-    &--left {
+    &--call {
       margin-right: 52px;
     }
 
-    &--right {
+    &--write {
       margin-right: -52px;
     }
   }

@@ -49,8 +49,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-right: 100vw solid transparent;
     border-top: 10vw solid $basic-white;
+    border-right: 100vw solid transparent;
     overflow: hidden;
     z-index: $z-index-background-color;
 

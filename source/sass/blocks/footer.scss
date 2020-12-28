@@ -31,12 +31,12 @@
 .footer__social {
   @media (max-width: $small-only) {
     margin: 0 auto;
-    padding: 18px 38px;
+    padding: 11px 38px;
   }
 
   @media (min-width: $tablet) {
     margin-right: 15px;
-    padding: 15px 0 14px;
+    padding: 8px 0 14px;
   }
 
   @media (min-width: $desktop) {
@@ -47,10 +47,10 @@
 .footer__develop {
   @media (max-width: $small-only) {
     margin: 0 auto;
-    padding: 20px 14px 12px;
+    padding: 27px 14px 12px;
   }
 
   @media (min-width: $tablet) {
-    padding: 15px 0 14px;
+    padding: 10px 0 14px;
   }
 }
