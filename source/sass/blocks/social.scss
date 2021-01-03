@@ -16,6 +16,10 @@
   background-position: center;
   background-repeat: no-repeat;
 
+  @media (min-width: $desktop) {
+    margin: 0 3px;
+  }
+
   &--twitter {
     background-image: url("../img/twitter.svg");
   }

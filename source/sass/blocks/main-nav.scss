@@ -95,7 +95,7 @@
     inset 0 1px 0 rgba($basic-white, 0.15);
 
   @media (min-width: $desktop) {
-    margin: 0 19px;
+    margin: 0 40px;
     background-color: transparent;
     box-shadow: none;
   }
@@ -109,6 +109,11 @@
   text-transform: uppercase;
 
   @media (min-width: $desktop) {
+    padding: 10px 0;
     text-transform: initial;
+
+    &--current {
+      box-shadow: 0 2px $basic-white;
+    }
   }
 }

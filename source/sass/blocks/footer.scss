@@ -26,6 +26,17 @@
     margin-bottom: 13px;
     padding: 15px 0 15px;
   }
+
+  &--contest-page {
+    @media (max-width: $small-only) {
+      padding: 14px 20px 21px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
+      margin-bottom: 6px;
+      padding-top: 16px;
+    }
+  }
 }
 
 .footer__social {
@@ -37,6 +48,10 @@
   @media (min-width: $tablet) {
     margin-right: 15px;
     padding: 8px 0 14px;
+
+    &--contest-page {
+      padding-top: 15px;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -52,5 +67,15 @@
 
   @media (min-width: $tablet) {
     padding: 10px 0 14px;
+
+    &--contest-page {
+      padding-top: 17px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &--contest-page {
+      padding-top: 13px;
+    }
   }
 }
