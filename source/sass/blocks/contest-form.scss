@@ -295,7 +295,7 @@
 .contest-form__textarea {
   width: 100%;
   min-height: 201px;
-  resize: vertical;
+  resize: none;
 
   @media (min-width: $tablet) {
     min-height: 193px;

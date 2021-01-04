@@ -15,14 +15,3 @@
     line-height: 68px;
   }
 }
-
-.lead.contest__lead {
-  @media (max-width: $small-only) {
-    line-height: 33px;
-  }
-
-  @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
-    font-size: 50px;
-    line-height: 68px;
-  }
-}

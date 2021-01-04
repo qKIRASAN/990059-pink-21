@@ -1,15 +1,3 @@
-.contest + .footer {
-  margin-top: 1px;
-
-  @media (min-width: $tablet) {
-    margin-top: 35px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-top: -14px;
-  }
-}
-
 .contest {
   overflow: hidden;
 }
@@ -26,6 +14,15 @@
   @media (min-width: $desktop) {
     padding-top: 169px;
     padding-bottom: 89px;
+  }
+
+  @media (max-width: $small-only) {
+    line-height: 33px;
+  }
+
+  @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 
