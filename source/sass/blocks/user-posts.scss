@@ -7,11 +7,41 @@
   top: 184px;
   right: 0;
   margin: 0;
-  padding: 6px 20px;
+  padding: 6px 20px 6px 19px;
   font-weight: 700;
   font-size: 12px;
   color: $basic-white;
   background-color: $secondary-soft;
   text-transform: uppercase;
   z-index: $z-index-highlight;
+
+  @media (min-width: $tablet) {
+    top: 285px;
+  }
+
+  @media (min-width: $desktop) {
+    top: 294px;
+    right: -30px;
+  }
+}
+
+.user-posts__inner {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 -30px;
+  }
+}
+
+.user-posts__item {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 54px;
+  }
 }

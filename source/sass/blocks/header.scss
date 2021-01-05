@@ -27,6 +27,14 @@
   margin-left: -10px;
   width: 94px;
 
+  &[href]:hover .logo__icon {
+    fill: $secondary-soft;
+  }
+
+  &[href]:active .logo__icon {
+    fill: rgba($basic-white, 0.3);
+  }
+
   &--open-menu {
     padding: 23px 10px;
   }

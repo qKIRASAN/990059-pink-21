@@ -7,11 +7,27 @@
   color: $basic-white;
   text-align: center;
 
+  &:not([disabled]):hover,
+  &:not([disabled]):active {
+    cursor: pointer;
+  }
+
   &--round {
     padding: 14px;
     width: 100%;
     border: 3px solid $basic-white;
-    border-radius: 29px;
+    border-radius: 30px;
+
+    &:not([disabled]):hover {
+      color: $secondary-soft;
+      background-color: $basic-white;
+      box-shadow: 0 5px 7px rgba($basic-black, 0.75);
+    }
+
+    &:not([disabled]):active {
+      color: rgba($secondary-soft, 0.3);
+      background-color: $basic-white;
+    }
 
     @media (min-width: $desktop) {
       font-size: 21px;
@@ -21,18 +37,59 @@
   &--upload,
   &--cancel {
     margin-top: 7px;
-    padding: 15px;
+    padding: 15px 15px 16px;
     line-height: 18px;
     color: $secondary-soft;
-    background-color: $basic-white;
+    background-color: $complementary-light;
     border-color: $secondary-soft;
+
+    &:not([disabled]):hover {
+      color: $basic-white;
+      background-color: $secondary-soft;
+      box-shadow: none;
+    }
+
+    &:not([disabled]):active {
+      color: rgba($basic-white, 0.3);
+      background-color: $secondary-soft;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 0;
+      max-width: 183px;
+    }
   }
 
   &--cancel {
-    margin-top: 13px;
+    margin-top: 12px;
     color: $primary;
     border-color: $primary;
     opacity: 0.1;
+
+    &:not([disabled]):hover {
+      color: $primary;
+      background-color: $complementary-light;
+      opacity: 0.3;
+    }
+
+    &:not([disabled]):active {
+      color: rgba($basic-white, 0.3);
+      background-color: $primary;
+      border-color: $primary;
+      opacity: 0.3;
+    }
+
+    @media (min-width: $tablet) {
+      margin-top: 24px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 0;
+    }
   }
 
   &--rect {
@@ -43,5 +100,21 @@
     text-transform: uppercase;
     border: 2px solid $accent-soft;
     border-radius: 3px;
+
+    &:not([disabled]):hover,
+    &:not([disabled]):active {
+      background-color: $accent-bright;
+      border-color: $accent-bright;
+    }
+
+    &:not([disabled]):active {
+      color: rgba($basic-white, 0.3);
+    }
+  }
+
+  &[disabled] {
+    color: $basic-white;
+    background-color: $complementary-soft;
+    border: 2px solid $complementary-soft;
   }
 }

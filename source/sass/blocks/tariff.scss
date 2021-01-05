@@ -1,7 +1,6 @@
 .tariff {
   @media (min-width: $desktop) {
-    padding-top: 75px;
-    padding-bottom: 27px;
+    padding: 75px 0 27px;
   }
 }
 
@@ -14,6 +13,10 @@
     grid-template-columns: repeat(4, 1fr);
     max-width: 940px;
     text-align: initial;
+  }
+
+  @media (min-width: $desktop) {
+    width: calc(100vw - 20px);
   }
 }
 

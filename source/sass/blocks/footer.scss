@@ -17,6 +17,21 @@
 }
 
 .footer__logo {
+  &[href]:hover .logo__icon--glasses,
+  &[href]:hover .logo__icon--asterisk,
+  &[href]:hover .logo__icon--pink {
+    fill: $secondary-soft;
+  }
+
+  &[href]:active .logo__icon--glasses,
+  &[href]:active .logo__icon--asterisk {
+    opacity: 0.3;
+  }
+
+  &[href]:active .logo__icon--pink {
+    fill: rgba($primary, 0.3);
+  }
+
   @media (max-width: $small-only) {
     margin: 0 auto;
     padding: 20px;
@@ -29,12 +44,27 @@
 
   &--contest-page {
     @media (max-width: $small-only) {
-      padding: 14px 20px 21px;
+      padding: 15px 20px 20px;
     }
 
     @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
       margin-bottom: 6px;
       padding-top: 16px;
+    }
+  }
+
+  &--catalog-page {
+    @media (max-width: $small-only) {
+      padding: 15px 20px 20px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
+      margin-bottom: 6px;
+      padding-top: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 13px;
     }
   }
 }

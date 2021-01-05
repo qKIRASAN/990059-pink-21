@@ -108,9 +108,23 @@
   text-align: center;
   text-transform: uppercase;
 
+  &[href]:hover {
+    color: $secondary-soft;
+  }
+
+  @media (max-width: $mobile-and-tablet-only) {
+    &[href]:active {
+      color: rgba($secondary-soft, 0.3);
+    }
+  }
+
   @media (min-width: $desktop) {
     padding: 10px 0;
     text-transform: initial;
+
+    &[href]:active {
+      color: rgba($basic-white, 0.3);
+    }
 
     &--current {
       box-shadow: 0 2px $basic-white;

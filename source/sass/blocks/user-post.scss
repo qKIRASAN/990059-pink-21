@@ -1,24 +1,76 @@
 .user-post {
-  margin-bottom: 21px;
+  @media (min-width: $tablet) {
+    &:first-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .user-post__image-container {
-  width: 280px;
-  height: 180px;
+  min-height: 137px;
   background-color: $complementary-soft;
+
+  @media (min-width: $tablet) {
+    min-height: 300px;
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 400px;
+  }
 
   &--viewport-width {
     @include viewport-width-100;
-    height: 137px;
+
+    @media (min-width: $tablet) {
+      min-height: 509px;
+    }
+
+    @media (min-width: $desktop) {
+      min-height: 506px;
+    }
   }
 }
 
 .user-post__container {
   background-color: $complementary-light;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 13px;
+    min-height: 155px;
+
+    &--viewport-width {
+      margin-bottom: 30px;
+      min-height: unset;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 4px 11px;
+
+    &--viewport-width {
+      padding: 4px 11px;
+    }
+  }
 }
 
 .user-post__header {
   padding: 18px 17px;
+
+  @media (min-width: $desktop) {
+    padding: 19px 17px 17px;
+  }
+}
+
+.user-post__author {
+  font-weight: 700;
 }
 
 .user-post__datetime {
@@ -28,7 +80,7 @@
 
 .user-post__content {
   margin-top: -28px;
-  margin-bottom: 0;
+  margin-bottom: auto;
   padding: 10px 10px 10px 17px;
   font-weight: 400;
 }
@@ -37,14 +89,47 @@
   display: flex;
   align-items: center;
   margin-top: -8px;
-  padding: 8px 17px 18px;
+  padding: 8px 17px 19px;
   font-weight: 400;
   font-size: 12px;
   color: $secondary-soft;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &--viewport-width {
+      justify-content: initial;
+      margin-top: -89px;
+      padding-bottom: 69px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 20px;
+
+    &--viewport-width {
+      margin-top: -65px;
+      padding-right: 20px;
+      padding-bottom: 44px;
+    }
+  }
+
+  &--extra-padding {
+    padding-top: 9px;
+  }
 }
 
 .user-post__like-counter {
   margin: 0;
-  padding-left: 19px;
+  padding-left: 18px;
+
+  @media (min-width: $tablet) {
+    padding-left: 0;
+
+    &--viewport-width {
+      padding-right: 16px;
+    }
+  }
 }
