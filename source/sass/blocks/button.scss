@@ -36,12 +36,12 @@
   }
 
   &--rect {
-    padding: 14px;
+    padding: 14px 14px 15px;
     width: 100%;
     line-height: 30px;
     background-color: $accent-soft;
     text-transform: uppercase;
     border: 2px solid $accent-soft;
-    border-radius: 1px;
+    border-radius: 3px;
   }
 }
