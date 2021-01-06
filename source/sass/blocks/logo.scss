@@ -1,5 +1,28 @@
 .logo {
   display: block;
+
+  &[href]:hover .logo__icon {
+    fill: $secondary-soft;
+
+    &--glasses,
+    &--asterisk,
+    &--pink {
+      fill: $secondary-soft;
+    }
+  }
+
+  &[href]:active .logo__icon {
+    fill: rgba($basic-white, 0.3);
+
+    &--glasses,
+    &--asterisk {
+      fill: rgba($secondary-soft, 0.3);
+    }
+
+    &--pink {
+      fill: rgba($primary, 0.3);
+    }
+  }
 }
 
 .logo__initial {

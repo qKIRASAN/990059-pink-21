@@ -29,12 +29,27 @@
 
   &--contest-page {
     @media (max-width: $small-only) {
-      padding: 14px 20px 21px;
+      padding: 15px 20px 20px;
     }
 
     @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
       margin-bottom: 6px;
       padding-top: 16px;
+    }
+  }
+
+  &--catalog-page {
+    @media (max-width: $small-only) {
+      padding: 15px 20px 20px;
+    }
+
+    @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
+      margin-bottom: 6px;
+      padding-top: 16px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-top: 13px;
     }
   }
 }

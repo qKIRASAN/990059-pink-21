@@ -18,4 +18,17 @@
   @media (min-width: $desktop) {
     margin-left: 13px;
   }
+
+  &:hover .develop__icon {
+    fill: $primary;
+  }
+
+  &:active .develop__icon {
+    fill: $primary;
+    fill-opacity: 0.3;
+  }
+}
+
+.develop__icon {
+  fill: $secondary-soft;
 }
