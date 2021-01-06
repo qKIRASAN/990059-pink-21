@@ -17,21 +17,6 @@
 }
 
 .footer__logo {
-  &[href]:hover .logo__icon--glasses,
-  &[href]:hover .logo__icon--asterisk,
-  &[href]:hover .logo__icon--pink {
-    fill: $secondary-soft;
-  }
-
-  &[href]:active .logo__icon--glasses,
-  &[href]:active .logo__icon--asterisk {
-    opacity: 0.3;
-  }
-
-  &[href]:active .logo__icon--pink {
-    fill: rgba($primary, 0.3);
-  }
-
   @media (max-width: $small-only) {
     margin: 0 auto;
     padding: 20px;

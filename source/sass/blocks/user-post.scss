@@ -1,12 +1,12 @@
 .user-post {
   @media (min-width: $tablet) {
-    &:first-child {
+    &--viewport-width {
       grid-column: 1 / -1;
     }
   }
 
   @media (min-width: $desktop) {
-    &:first-child {
+    &--viewport-width {
       margin-bottom: 20px;
     }
   }

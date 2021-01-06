@@ -27,20 +27,12 @@
   margin-left: -10px;
   width: 94px;
 
-  &[href]:hover .logo__icon {
-    fill: $secondary-soft;
-  }
-
-  &[href]:active .logo__icon {
-    fill: rgba($basic-white, 0.3);
-  }
-
   &--open-menu {
     padding: 23px 10px;
   }
 
   @media (min-width: $tablet) {
-    padding: 27px 10px 43px;
+    padding: 27px 10px 42px;
     width: 167px;
   }
 
