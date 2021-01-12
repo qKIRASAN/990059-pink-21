@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="header header--open-menu page__header">
     <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js модификатор удаляется с помощью скрипта. Далее обработчик событий при клике на кнопку добавляет / удаляет модификатор в разметку -->
-    <div class="header__inner page__container">
+    <div class="header__inner header__inner--open-menu page__container">
       <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js header-default заменяется на header с помощью скрипта -->
       <a class="logo header__logo header__logo--open-menu" href="index.html">
         <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js модификатор удаляется с помощью скрипта. Далее обработчик событий при клике на кнопку добавляет / удаляет модификатор в разметку -->
@@ -40,9 +40,12 @@
         </svg>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--disabled" type="button" aria-label="Показать меню"></button>
-        <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js модификатор main-nav__toggle--disabled удаляется -->
-        <!--При открытии меню добавляется модификатор main-nav__toggle--close, aria-label меняется на "Закрыть меню", при зарытии наоборот -->
+        <button class="main-nav__toggle main-nav__toggle--disabled" type="button" aria-label="Показать меню">
+          <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js модификатор main-nav__toggle--disabled удаляется -->
+          <!--При открытии меню добавляется модификатор main-nav__toggle--shown, aria-label меняется на "Закрыть меню", при зарытии наоборот -->
+          <span class="main-nav__burger"></span>
+          <!--При открытии меню добавляется модификатор burger--open-menu, при зарытии модификатор удаляется -->
+        </button>
         <ul class="main-nav__list">
           <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js добавляется модификатор main-nav__list--closed -->
           <!--Далее обработчик событий при клике на кнопку добавляет / удаляет модификатор в разметку -->
@@ -284,5 +287,6 @@
       </a>
     </p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>
