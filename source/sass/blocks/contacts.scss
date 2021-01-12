@@ -105,10 +105,22 @@
       margin-right: -52px;
     }
   }
+
+  &--write {
+    &:hover {
+      color: $primary;
+      text-decoration: underline;
+    }
+
+    &:active {
+      color: rgba($primary, 0.3);
+      text-decoration: none;
+    }
+  }
 }
 
 .contacts__map {
-  margin-top: 25px;
+  margin-top: 26px;
 
   @media (min-width: $tablet) {
     margin-top: -12px;

@@ -4,7 +4,7 @@
 
   @media (min-width: $tablet) {
     width: 100%;
-    height: 729px;
+    min-height: 729px;
     background-image: url("../img/phone-medium.png"), url("../img/library-medium.jpg");
     background-repeat: no-repeat, no-repeat;
     background-position: 50% 100%, 50%;
@@ -12,7 +12,7 @@
   }
 
   @media (min-width: $desktop) {
-    height: 853px;
+    min-height: 853px;
     background-image: url("../img/phone-large.png"), url("../img/library-large.jpg");
     background-position: 63.5% 100%, 50%;
     background-size: auto, cover;
@@ -33,11 +33,12 @@
   position: relative;
   padding: 0;
   width: 100%;
-  height: 462px;
+  min-height: 462px;
   background-image: url("../img/phone-small.png"),
     url("../img/library-small.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 100%, 50%;
+  background-size: auto, cover;
 
   &--viewport-width {
     @include viewport-width-100;
@@ -49,7 +50,7 @@
 }
 
 .promo__lead {
-  padding: 90px 20px 34px;
+  padding: 89px 20px 34px;
   max-width: 375px;
 
   @media (min-width: $tablet) {
@@ -58,7 +59,7 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 209px 30px 15px;
+    padding: 209px 30px 14px;
     margin-left: -30px;
   }
 

@@ -1,6 +1,9 @@
 .tariff {
+  border-collapse: collapse;
+
   @media (min-width: $desktop) {
-    padding: 75px 0 27px;
+    display: block;
+    padding: 76px 0 29px;
   }
 }
 
@@ -11,6 +14,7 @@
     left: unset;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: calc(100vw - 40px);
     max-width: 940px;
     text-align: initial;
   }
@@ -23,22 +27,20 @@
 .tariff__header-container {
   display: flex;
   flex-direction: column;
-  padding: 9px 10px 27px;
+  padding: 12px 10px 29px;
   line-height: 30px;
   text-transform: uppercase;
   color: $basic-white;
   background-color: $primary;
-  border: 1px solid $primary;
-  border-right-color: $basic-white;
-  border-left-color: $basic-white;
-  border-radius: 1px 0 0 0;
+  border: 2px solid $complementary-light;
+  border-top-width: 0;
 
   @media (min-width: $tablet) {
-    padding: 9px 11px 7px;
+    padding: 12px 11px 10px;
   }
 
   @media (min-width: $desktop) {
-    padding: 15px 11px 21px;
+    padding: 15px 11px 23px;
   }
 
   &--first-cell {
@@ -50,13 +52,72 @@
       border-color: transparent;
     }
   }
+
+  &--unlimited {
+    border-radius: 0 4px 0 0;
+
+    @media (min-width: $tablet) {
+      border-right-width: 0;
+    }
+  }
+
+  &--base {
+    border-radius: 4px 0 0 0;
+
+    @media (min-width: $tablet) {
+      border-left-width: 0;
+    }
+  }
+
+  &--best-seller {
+    position: relative;
+    font-weight: 400;
+    line-height: 10px;
+
+    @media (min-width: $tablet) {
+      overflow: hidden;
+    }
+
+    &::after {
+      content: "Хит";
+      position: absolute;
+      top: 18px;
+      left: -31px;
+      transform: rotate(-45deg);
+      padding: 7px 10px 6px;
+      min-width: 110px;
+      background-color: $secondary-soft;
+
+      @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
+        top: 16px;
+        left: -36px;
+        padding: 4px 10px 5px;
+      }
+    }
+
+    &::before {
+      @media (max-width: $small-only) {
+        content: "";
+        position: absolute;
+        top: 45px;
+        left: -19px;
+        border-top: 29px solid $primary;
+        border-right: 29px solid transparent;
+        transform: rotate(-45deg);
+        z-index: $z-index-promo;
+      }
+    }
+  }
 }
 
 .tariff__header {
+  margin-bottom: -3px;
   font-weight: 700;
   font-size: 16px;
+  line-height: 30px;
 
   @media (min-width: $desktop) {
+    margin-bottom: 0;
     font-size: 18px;
   }
 }
@@ -64,6 +125,7 @@
 .tariff__price {
   font-weight: 300;
   font-size: 18px;
+  line-height: 30px;
 
   @media (min-width: $desktop) {
     font-size: 24px;
@@ -71,13 +133,23 @@
 }
 
 .tariff__option-container {
+  margin-top: -2px;
   padding: 14px 20px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
   background-color: $basic-white;
-  border: 1px solid $complementary-soft;
-  border-radius: 1px 0 0 0;
+  border: 2px solid $complementary-soft;
+
+  @media (min-width: $tablet) {
+    padding: 8px 14px 7px;
+    text-transform: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 14px 21px;
+    font-size: 18px;
+  }
 
   &--first-cell {
     display: none;
@@ -87,14 +159,20 @@
     }
   }
 
-  @media (min-width: $tablet) {
-    padding: 7px 14px;
-    text-transform: none;
+  &--top-left {
+    border-radius: 1px 0 0 0;
   }
 
-  @media (min-width: $desktop) {
-    padding: 14px 21px;
-    font-size: 18px;
+  &--top-right {
+    border-radius: 0 1px 0 0;
+  }
+
+  &--bottom-left {
+    border-radius: 0 0 0 1px;
+  }
+
+  &--bottom-right {
+    border-radius: 0 0 1px 0;
   }
 }
 
