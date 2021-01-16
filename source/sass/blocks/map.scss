@@ -5,7 +5,7 @@
   width: 100%;
   min-height: 200px;
   background-color: $complementary-light;
-  background-image: url("../img/map.jpg");
+  background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
@@ -13,11 +13,12 @@
 
   @media (min-width: $tablet) {
     min-height: 372px;
+    background-image: url("../img/map-medium.png");
   }
 
   @media (min-width: $desktop) {
     min-height: 578px;
-    background-image: url("../img/map-large.jpg");
+    background-image: url("../img/map-large.png");
   }
 
   &--viewport-width {

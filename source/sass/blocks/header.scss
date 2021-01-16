@@ -38,10 +38,12 @@
         height: 1px;
         box-shadow: 0 1px 0 $basic-black;
         z-index: $z-index-header;
+      }
+    }
 
-        @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
-          top: 108px;
-        }
+    @media (min-width: $tablet) and (max-width: $mobile-and-tablet-only) {
+      &::before {
+        top: 108px;
       }
     }
   }
