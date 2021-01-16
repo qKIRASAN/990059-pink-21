@@ -5,6 +5,15 @@
   background-image: url("../img/library-small.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  background-size: cover;
+
+  @media (min-width: $tablet) {
+    background-image: url("../img/library-medium.jpg");
+  }
+
+  @media (min-width: $desktop) {
+    background-image: url("../img/library-large.jpg");
+  }
 
   &--viewport-width {
     @include viewport-width-100;

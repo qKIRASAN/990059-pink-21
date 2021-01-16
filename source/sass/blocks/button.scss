@@ -101,6 +101,15 @@
     border: 2px solid $accent-soft;
     border-radius: 3px;
 
+    @media (min-width: $tablet) {
+      max-width: 299px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $desktop) {
+      max-width: 460px;
+    }
+
     &:not([disabled]):hover,
     &:not([disabled]):active {
       background-color: $accent-bright;
