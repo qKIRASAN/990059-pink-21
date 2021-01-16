@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="header header--open-menu page__header">
     <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js модификатор удаляется с помощью скрипта. Далее обработчик событий при клике на кнопку добавляет / удаляет модификатор в разметку -->
-    <div class="header__inner page__container">
+    <div class="header__inner header__inner--open-menu page__container">
       <a class="logo header__logo header__logo--open-menu">
         <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js модификатор удаляется с помощью скрипта. Далее обработчик событий при клике на кнопку добавляет / удаляет модификатор в разметку -->
         <svg class="logo__initial" width="74" height="23" viewBox="0 0 74 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -39,9 +39,12 @@
         </svg>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--disabled" type="button" aria-label="Показать меню"></button>
-        <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js модификатор main-nav__toggle--disabled удаляется -->
-        <!--При открытии меню добавляется модификатор main-nav__toggle--close, aria-label меняется на "Закрыть меню", при зарытии наоборот -->
+        <button class="main-nav__toggle main-nav__toggle--disabled" type="button" aria-label="Показать меню">
+          <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js модификатор main-nav__toggle--disabled удаляется -->
+          <!--При открытии меню добавляется модификатор main-nav__toggle--shown, aria-label меняется на "Закрыть меню", при зарытии наоборот -->
+          <span class="main-nav__burger"></span>
+          <!--При открытии меню добавляется модификатор burger--open-menu, при зарытии модификатор удаляется -->
+        </button>
         <ul class="main-nav__list">
           <!--Состояние по умолчанию, при отключенном js (критерий Б30). При включенном js добавляется модификатор main-nav__list--closed -->
           <!--Далее обработчик событий при клике на кнопку добавляет / удаляет модификатор в разметку -->
@@ -93,23 +96,17 @@
         <li class="features__item">
           <b class="features__specific">Поднимает настроение</b>
           <p class="features__content">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          <div class="features__image-container">
-            <img class="features__img features__img--disabled" src="https://via.placeholder.com/136x245" width="136" height="245" alt="Старые серые мусорные баки крупным планом. Навевают тоску и уныние">
-          </div>
+          <div class="features__image-container features__image-container--mood"></div>
         </li>
         <li class="features__item">
           <b class="features__specific">Меняет мир вокруг</b>
           <p class="features__content">Сделайте снимок и украсьте&nbsp;его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
-          <div class="features__image-container">
-            <img class="features__img features__img--disabled"  src="https://via.placeholder.com/136x245" width="136" height="245" alt="Старые серые мусорные баки крупным планом. Заиграли новыми красками с применением розового фильтра">
-          </div>
+          <div class="features__image-container features__image-container--world"></div>
         </li>
         <li class="features__item">
           <b class="features__specific">Заводит новых&nbsp;друзей</b>
-          <p class="features__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и&nbsp;заводите новых</p>
-          <div class="features__image-container features__image-container--visible">
-            <img src="img/user-photo-comments.jpg" width="140" height="249" alt="Мусорные баки крупным планом. Розовый фильтр, весёлый смайлик и добрый комментарий - заряд хорошего настроения! Всем привет">
-          </div>
+          <p class="features__content">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями <br>и заводите новых</p>
+          <div class="features__image-container features__image-container--friends"></div>
         </li>
       </ul>
     </section>
@@ -153,17 +150,17 @@
           <thead>
           <tr class="tariff__row slider__list slider__list--current">
             <th class="tariff__header-container tariff__header-container--first-cell"></th>
-            <th class="tariff__header-container slider__item"><span class="tariff__header">База</span><span class="tariff__price">1,99 usd</span></th>
-            <th class="tariff__header-container slider__item"><span class="tariff__header">Стандарт</span><span class="tariff__price">3,99 usd</span></th>
-            <th class="tariff__header-container slider__item"><span class="tariff__header">Анлим</span><span class="tariff__price">9,99 usd</span></th>
+            <th class="tariff__header-container tariff__header-container--base slider__item"><span class="tariff__header">База</span><span class="tariff__price">1,99 usd</span></th>
+            <th class="tariff__header-container tariff__header-container--best-seller slider__item"><span class="tariff__header">Стандарт</span><span class="tariff__price">3,99 usd</span></th>
+            <th class="tariff__header-container tariff__header-container--unlimited slider__item"><span class="tariff__header">Анлим</span><span class="tariff__price">9,99 usd</span></th>
           </tr>
           </thead>
           <tbody>
           <tr class="tariff__row slider__list slider__list--current">
-            <td class="tariff__option-container tariff__option-container--first-cell">Розовый фильтр</td>
+            <td class="tariff__option-container tariff__option-container--first-cell tariff__option-container--top-left">Розовый фильтр</td>
             <td class="tariff__option-container slider__item"><span class="tariff__option tariff__option--selected"><span class="tariff__option-description">Розовый фильтр</span></span></td>
             <td class="tariff__option-container slider__item"><span class="tariff__option tariff__option--selected"><span class="tariff__option-description">Розовый фильтр</span></span></td>
-            <td class="tariff__option-container slider__item"><span class="tariff__option tariff__option--selected"><span class="tariff__option-description">Розовый фильтр</span></span></td>
+            <td class="tariff__option-container tariff__option-container--top-right slider__item"><span class="tariff__option tariff__option--selected"><span class="tariff__option-description">Розовый фильтр</span></span></td>
           </tr>
           <tr class="tariff__row slider__list slider__list--current">
             <td class="tariff__option-container tariff__option-container--first-cell">Смайлики</td>
@@ -172,10 +169,10 @@
             <td class="tariff__option-container slider__item"><span class="tariff__option tariff__option--selected"><span class="tariff__option-description">Смайлики</span></span></td>
           </tr>
           <tr class="tariff__row slider__list slider__list--current">
-            <td class="tariff__option-container tariff__option-container--first-cell">Комментарии</td>
+            <td class="tariff__option-container tariff__option-container--first-cell tariff__option-container--bottom-left">Комментарии</td>
             <td class="tariff__option-container slider__item"><span class="tariff__option tariff__option--deselected"><span class="tariff__option-description">Комментарии</span></span></td>
             <td class="tariff__option-container slider__item"><span class="tariff__option tariff__option--deselected"><span class="tariff__option-description">Комментарии</span></span></td>
-            <td class="tariff__option-container slider__item"><span class="tariff__option tariff__option--selected"><span class="tariff__option-description">Комментарии</span></span></td>
+            <td class="tariff__option-container tariff__option-container--bottom-right slider__item"><span class="tariff__option tariff__option--selected"><span class="tariff__option-description">Комментарии</span></span></td>
           </tr>
           </tbody>
         </table>
@@ -246,10 +243,11 @@
     <p class="develop footer__develop">Разработано
       <a class="develop__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
         <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
+          <path class="develop__icon" d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#D22856"/>
         </svg>
       </a>
     </p>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

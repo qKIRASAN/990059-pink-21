@@ -5,7 +5,6 @@
 
 .slider__list {
   display: flex;
-  text-align: center;
 
   &--current {
     position: relative;
@@ -39,6 +38,14 @@
     }
   }
 
+  &:not(&--current):hover {
+    background-color: rgba($primary, 0.6);
+  }
+
+  &:not(&--current):active {
+    background-color: rgba($primary, 0.1);
+  }
+
   @media (min-width: $desktop) {
     display: none;
   }
@@ -60,6 +67,8 @@
     background-color: transparent;
     background-image: url("../img/left-arrow.svg");
     background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.3;
 
     &--previous {
       left: 0;
@@ -68,6 +77,14 @@
     &--next {
       right: 0;
       background-image: url("../img/right-arrow.svg");
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
     }
   }
 }

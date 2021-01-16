@@ -27,6 +27,7 @@
     height: 276px;
     background-image: url("../img/clock.svg");
     background-repeat: no-repeat;
+    background-size: cover;
   }
 
   @media (min-width: $tablet) {
@@ -40,7 +41,8 @@
     padding: 107px 0 97px;
 
     &::before {
-      left: 10px;
+      top: 209px;
+      left: 1px;
       width: 298px;
       height: 345px;
     }

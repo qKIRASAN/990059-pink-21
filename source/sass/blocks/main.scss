@@ -14,11 +14,12 @@
 .main__tariffs {
   position: relative;
   margin-bottom: 20px;
-  padding: 99px 0 7px;
+  padding: 101px 0 7px;
+  background-color: $complementary-light;
 
   @media (min-width: $tablet) {
     margin-bottom: 18px;
-    padding: 95px 0 67px;
+    padding: 96px 0 66px;
   }
 
   @media (min-width: $desktop) {
