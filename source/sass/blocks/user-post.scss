@@ -26,14 +26,6 @@
 
   &--viewport-width {
     @include viewport-width-100;
-
-    @media (min-width: $tablet) {
-      min-height: 509px;
-    }
-
-    @media (min-width: $desktop) {
-      min-height: 506px;
-    }
   }
 }
 

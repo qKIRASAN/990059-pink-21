@@ -7,12 +7,24 @@
   background-position: top;
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/library-small@2x.jpg");
+  }
+
   @media (min-width: $tablet) {
     background-image: url("../img/library-medium.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/library-crop-medium@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop) {
     background-image: url("../img/library-large.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/library-crop-large@2x.jpg");
+    }
   }
 
   &--viewport-width {
