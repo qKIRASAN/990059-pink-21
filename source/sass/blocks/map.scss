@@ -8,17 +8,30 @@
   background-image: url("../img/map.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   overflow: hidden;
   z-index: $z-index-background-image;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map@2x.png");
+  }
 
   @media (min-width: $tablet) {
     min-height: 372px;
     background-image: url("../img/map-medium.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-medium@2x.png");
+    }
   }
 
   @media (min-width: $desktop) {
     min-height: 578px;
     background-image: url("../img/map-large.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-large@2x.png");
+    }
   }
 
   &--viewport-width {

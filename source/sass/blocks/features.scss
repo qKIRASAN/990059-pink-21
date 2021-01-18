@@ -159,6 +159,11 @@
     @media (min-width: $desktop) {
       background-image: url("../img/iphone-mood.png");
       background-position: -1px 0;
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-mood@2x.png");
+      }
     }
   }
 
@@ -170,20 +175,38 @@
     @media (min-width: $desktop) {
       background-image: url("../img/iphone-world.png");
       background-position: 2px 0;
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-world@2x.png");
+      }
     }
   }
 
   &--friends {
     background-image: url("../img/iphone-mobile.png");
     background-position: 0 0;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-mobile@2x.png");
+    }
 
     @media (min-width: $tablet) {
       background-image: url("../img/iphone-tablet.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-tablet@2x.png");
+      }
     }
 
     @media (min-width: $desktop) {
       background-image: url("../img/iphone-friends.png");
       background-position: 5px 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-friends@2x.png");
+      }
     }
   }
 
