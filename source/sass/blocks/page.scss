@@ -50,13 +50,13 @@
 }
 
 .page__footer-catalog {
-  margin-top: 4px;
+  margin-top: 5px;
 
   @media (min-width: $tablet) {
-    margin-top: 1px;
+    margin-top: 0;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 29px;
+    margin-top: 28px;
   }
 }

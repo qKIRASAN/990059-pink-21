@@ -286,9 +286,23 @@
   color: $primary;
   border: 2px solid $complementary-soft;
   border-radius: 1px;
+  outline: none;
 
   @media (min-width: $tablet) {
     flex-grow: 1;
+  }
+
+  &::placeholder {
+    color: $primary;
+    opacity: 1;
+  }
+
+  &:hover {
+    border-color: $primary;
+  }
+
+  &:focus {
+    border-color: $secondary-soft;
   }
 }
 
@@ -343,6 +357,7 @@
 .contest-form__checkbox-label {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .contest-form__checkbox-value {
@@ -389,6 +404,15 @@
   opacity: 1;
 }
 
+.contest-form__checkbox-input:hover + .contest-form__checkbox-value::after {
+  border-color: $primary;
+}
+
+.contest-form__checkbox-input:active + .contest-form__checkbox-value::after,
+.contest-form__checkbox-input:focus + .contest-form__checkbox-value::after {
+  border-color: $secondary-soft;
+}
+
 .contest-form__radio-container {
   margin: 0 0 5px;
   padding: 19px 1px;
@@ -416,6 +440,7 @@
 .contest-form__radio-label {
   position: relative;
   display: block;
+  cursor: pointer;
 }
 
 .contest-form__radio-value {
@@ -456,6 +481,15 @@
 
 .contest-form__radio-input:checked + .contest-form__radio-value::before {
   opacity: 1;
+}
+
+.contest-form__radio-input:hover + .contest-form__radio-value::after {
+  border-color: $primary;
+}
+
+.contest-form__radio-input:active + .contest-form__radio-value::after,
+.contest-form__radio-input:focus + .contest-form__radio-value::after {
+  border-color: $secondary-soft;
 }
 
 .contest-form__button-container {

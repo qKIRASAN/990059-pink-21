@@ -9,6 +9,15 @@
   border-radius: 1px;
   z-index: $z-index-popup;
 
+  @media (min-width: $tablet) {
+    width: 460px;
+    border-radius: 5px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 780px;
+  }
+
   &--failure {
     display: none;
   }
@@ -25,6 +34,14 @@
   padding: 24px 20px;
   text-align: center;
 
+  @media (min-width: $tablet) {
+    padding: 18px 20px 23px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 26px 20px 33px;
+  }
+
   &--failure {
     padding-bottom: 49px;
   }
@@ -34,12 +51,31 @@
   padding: 15px;
   font-size: 18px;
   color: $basic-black;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 14px;
+  }
 }
 
 .modal__message {
   font-weight: 400;
   margin: 0;
   padding: 10px 0;
+
+  @media (min-width: $tablet) {
+    padding: 7px 45px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 7px 134px;
+  }
 
   &--failure {
     padding-bottom: 42px;
