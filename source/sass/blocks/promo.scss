@@ -9,6 +9,11 @@
     background-repeat: no-repeat, no-repeat;
     background-position: 50% 100%, 50%;
     background-size: auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-medium@2x.png"), url("../img/library-medium@2x.jpg");
+      background-size: 660px, cover;
+    }
   }
 
   @media (min-width: $desktop) {
@@ -16,6 +21,11 @@
     background-image: url("../img/phone-large.png"), url("../img/library-large.jpg");
     background-position: 63.5% 100%, 50%;
     background-size: auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-large@2x.png"), url("../img/library-large@2x.jpg");
+      background-size: 1050px, cover;
+    }
   }
 }
 
@@ -34,11 +44,15 @@
   padding: 0;
   width: 100%;
   min-height: 462px;
-  background-image: url("../img/phone-small.png"),
-    url("../img/library-small.jpg");
+  background-image: url("../img/phone-small.png"), url("../img/library-small.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: 50% 100%, 50%;
   background-size: auto, cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/phone-small@2x.png"), url("../img/library-small@2x.jpg");
+    background-size: 320px, cover;
+  }
 
   &--viewport-width {
     @include viewport-width-100;
