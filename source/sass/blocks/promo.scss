@@ -12,7 +12,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/phone-medium@2x.png"), url("../img/library-medium@2x.jpg");
-      background-size: contain, cover;
+      background-size: 660px, cover;
     }
   }
 
@@ -24,7 +24,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/phone-large@2x.png"), url("../img/library-large@2x.jpg");
-      background-size: contain, cover;
+      background-size: 1050px, cover;
     }
   }
 }
@@ -51,7 +51,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/phone-small@2x.png"), url("../img/library-small@2x.jpg");
-    background-size: contain, cover;
+    background-size: 320px, cover;
   }
 
   &--viewport-width {

@@ -146,7 +146,7 @@
 
   @media (min-width: $desktop) {
     margin-top: -37px;
-    width: 190px;
+    width: 186px;
     height: 301px;
     order: -1;
   }
@@ -158,7 +158,7 @@
 
     @media (min-width: $desktop) {
       background-image: url("../img/iphone-mood.png");
-      background-position: -1px 0;
+      background-position: -3px -1px;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
@@ -202,7 +202,7 @@
 
     @media (min-width: $desktop) {
       background-image: url("../img/iphone-friends.png");
-      background-position: 5px 0;
+      background-position: 3px -4px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-friends@2x.png");
