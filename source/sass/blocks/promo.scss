@@ -5,37 +5,57 @@
   @media (min-width: $tablet) {
     width: 100%;
     min-height: 729px;
-    background-image: url("../img/phone-medium.png"), url("../img/library-medium.jpg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 50% 100%, 50%;
-    background-size: auto, cover;
+    background-image: url("../img/library-medium.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/phone-medium@2x.png"), url("../img/library-medium@2x.jpg");
-      background-size: 660px, cover;
+      background-image: url("../img/library-medium@2x.jpg");
     }
   }
 
   @media (min-width: $desktop) {
     min-height: 853px;
-    background-image: url("../img/phone-large.png"), url("../img/library-large.jpg");
-    background-position: 63.5% 100%, 50%;
-    background-size: auto, cover;
+    background-image: url("../img/library-large.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/phone-large@2x.png"), url("../img/library-large@2x.jpg");
-      background-size: 1050px, cover;
+      background-image: url("../img/library-large@2x.jpg");
     }
   }
 }
 
 .promo__inner {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 26px;
 
-  @media (max-width: $mobile-and-tablet-only) {
-    position: relative;
+  @media (min-width: $tablet) {
+    min-height: 729px;
+    background-image: url("../img/phone-medium.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-medium@2x.png");
+      background-size: 660px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
+    min-height: 853px;
+    background-image: url("../img/phone-large.png");
+    background-repeat: no-repeat;
+    background-position: 16px 100%;
+    background-size: auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/phone-large@2x.png");
+      background-size: 1050px;
+    }
   }
 }
 
@@ -104,10 +124,10 @@
 }
 
 .promo__stores-list {
-  padding: 33px 38px 10px;
+  padding: 33px 38px 2px;
 
   @media (min-width: $tablet) {
-    padding: 46px 48px 22px;
+    padding: 46px 48px 15px;
   }
 
   @media (min-width: $desktop) {
@@ -125,6 +145,6 @@
   }
 
   @media (min-width: $desktop) {
-    padding: 25px 0;
+    padding: 18px 0;
   }
 }
