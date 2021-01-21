@@ -23,6 +23,10 @@
     overflow: hidden;
   }
 
+  &--hide-line::after {
+    content: none;
+  }
+
   @media (min-width: $tablet) {
     width: 202px;
     height: 72px;
@@ -45,10 +49,6 @@
     &::after {
       left: -92px;
       width: 410px;
-    }
-
-    &:nth-child(3)::after {
-      content: none;
     }
   }
 
