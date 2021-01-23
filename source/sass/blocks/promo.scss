@@ -101,10 +101,12 @@
   padding: 0;
   width: 100%;
   min-height: 462px;
-  background-image: url("../img/phone-small.png"), url("../img/library-small.jpg");
+  background-image: url("../img/phone-small.png"),
+    url("../img/library-small.jpg");
 
   @supports (background-image: url("../img/phone-small.webp")) {
-    background-image: url("../img/phone-small.webp"), url("../img/library-small.webp");
+    background-image: url("../img/phone-small.webp"),
+      url("../img/library-small.webp");
   }
 
   background-repeat: no-repeat, no-repeat;
@@ -112,10 +114,12 @@
   background-size: auto, cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/phone-small@2x.png"), url("../img/library-small@2x.jpg");
+    background-image: url("../img/phone-small@2x.png"),
+      url("../img/library-small@2x.jpg");
 
     @supports (background-image: url("../img/phone-small@2x.webp")) {
-      background-image: url("../img/phone-small@2x.webp"), url("../img/library-small@2x.webp");
+      background-image: url("../img/phone-small@2x.webp"),
+        url("../img/library-small@2x.webp");
     }
 
     background-size: 320px, cover;
