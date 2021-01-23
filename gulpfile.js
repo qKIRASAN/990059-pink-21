@@ -84,7 +84,7 @@ exports.clean = clean;
 const images = () => {
   return gulp.src("source/img/*.{png,jpg,svg}")
     .pipe(imagemin([
-      imagemin.mozjpeg({ quality: 90, progressive: true }),
+      imagemin.mozjpeg({ quality: 85, progressive: true }),
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo({
         plugins: [{removeViewBox: false}]
