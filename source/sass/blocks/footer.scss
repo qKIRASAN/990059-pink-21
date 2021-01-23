@@ -4,10 +4,6 @@
   width: 100%;
   padding: 20px;
 
-  @media (max-width: $small-only) {
-    min-height: 284px;
-  }
-
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;

@@ -24,7 +24,9 @@
   }
 
   &--hide-line::after {
-    content: none;
+    @media (min-width: $desktop) {
+      content: none;
+    }
   }
 
   @media (min-width: $tablet) {
