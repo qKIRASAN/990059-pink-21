@@ -11,7 +11,7 @@ headerLogo.classList.remove("header__logo--open-menu");
 navToggle.classList.remove("main-nav__toggle--disabled");
 navList.classList.add("main-nav__list--closed");
 
-navToggle.addEventListener("click", function (event) {
+navToggle.addEventListener("click", function () {
   header.classList.toggle("header--open-menu");
   headerInner.classList.toggle("header__inner--open-menu");
   headerLogo.classList.toggle("header__logo--open-menu");
