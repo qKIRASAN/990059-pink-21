@@ -163,7 +163,8 @@
         background-image: url("../img/iphone-mood.webp");
       }
 
-      background-position: -3px -1px;
+      margin-left: -5px;
+      background-position: top;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
@@ -188,7 +189,7 @@
         background-image: url("../img/iphone-world.webp");
       }
 
-      background-position: 2px 0;
+      background-position: top;
       background-size: cover;
 
       @media (min-resolution: 2dppx) {
@@ -242,7 +243,8 @@
         background-image: url("../img/iphone-friends.webp");
       }
 
-      background-position: 3px -4px;
+      margin-right: -6px;
+      background-position: top;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/iphone-friends@2x.png");
